@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 
 public class FuncionarioDao {
     private Connection connection;
-    FuncionarioDao(){
+    public FuncionarioDao(){
         this.connection = new ConnectionFactory().getConnection();
     }
     public void adiciona(Funcionario funcionario)
